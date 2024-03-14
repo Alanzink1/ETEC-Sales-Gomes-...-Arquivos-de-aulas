@@ -51,5 +51,5 @@ Muitas Soft Skills foram aperfeiçoadas neste curso, mas ainda mais Hard Skills 
 - [@DevRodrigues](https://www.github.com/alanzink1)
 
 
-![Logo]([https://avatars.githubusercontent.com/u/112907965?v=4](https://fv5-3.failiem.lv/thumb_show.php?i=yb8u5zw875&view&v=1)https://fv5-3.failiem.lv/thumb_show.php?i=yb8u5zw875&view&v=1)
+![Logo]([https://fv5-3.failiem.lv/thumb_show.php?i=yb8u5zw875])
 
