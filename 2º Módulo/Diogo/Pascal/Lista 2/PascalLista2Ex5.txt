@@ -1,0 +1,29 @@
+Program HelloWorld(output);
+var
+    primeiro_semestre: array[1..6] of string = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho');
+    segundo_semestre: array[1..6] of string = ('Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+    nome_mes: string;
+    mes: string;
+
+begin
+
+    writeln('Digite o nome de um mês: ');
+    readln(nome_mes);
+
+    for mes in primeiro_semestre do
+    begin
+        if mes = nome_mes then
+        begin
+            writeln('Esse mês é do primeiro semestre!');
+        end;
+    end;
+    
+    for mes in segundo_semestre do
+    begin
+        if mes = nome_mes then
+        begin
+            writeln('Esse mês é do segundo semestre!');
+        end;
+    end;
+    
+end.

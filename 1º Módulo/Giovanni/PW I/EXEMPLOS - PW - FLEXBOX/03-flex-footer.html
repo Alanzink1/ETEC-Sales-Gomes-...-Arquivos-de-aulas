@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Footer</title>
+    <style>
+        /* 
+        
+            Quando o flex-direction está row (que é o padrão):
+                Justify-content: alinha na horizontal
+                align-items: alinha na vertical
+
+            Quando o flex-direction está column:
+                Justify-content: alinha na vertical
+                align-items: alinha na horizontal
+
+        */
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            padding-right: 30px;
+        }
+
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <a href="">Home</a>
+        <a href="">Sobre</a>
+        <a href="">Serviços</a>
+        <a href="">Contato</a>
+    </footer>
+</body>
+</html>

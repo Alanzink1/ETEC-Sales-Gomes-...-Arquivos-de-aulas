@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario Extra</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var hr_por_semana = 40;
+    var hrs_trabalhadas = parseFloat(prompt('Quantas Horas Foram Trabalhadas no Mês?'));
+    var slr_por_hr = parseFloat(prompt('Qual seu Salário por Hora?'));
+
+    var hr_extra = slr_por_hr + slr_por_hr / 100 * 50;
+
+    if(hrs_trabalhadas > 160) {
+        let extra = (hrs_trabalhadas - 160) * hr_extra;
+
+        let slr_total = 160 * slr_por_hr + extra;
+
+        alert('Seu Salário Total é de R$' + slr_total);
+    } else {
+        let slr_total = hrs_trabalhadas * slr_por_hr;
+        alert('Seu Salário Total é de R$' + slr_total);
+    }
+
+</script>
+</html>
+
+<!-- A jornada de trabalho semanal de um funcionário é de 40 horas. 
+    O funcionário que trabalhar mais de 40 horas receberá hora extra, 
+    cujo cálculo é o valor da hora regular com um acréscimo de 50%. 
+    Escreva um algoritmo que leia o número de horas trabalhadas em um mês,
+    o salário por hora e escreva o salário total do funcionário, que deverá 
+    ser acrescido das horas extras, caso tenham sido trabalhadas (considere 
+                que o mês possua 4 semanas exatas). -->

@@ -1,0 +1,14 @@
+Program HelloWorld(output);
+var
+    nome: string;
+    sobrenome: string;
+begin
+    writeln('Qual vosso nombre?');
+    readln(nome);
+    
+    writeln('Que nome bonito, ', nome, '! Qual é o seu sobrenome?');
+    readln(sobrenome);
+    
+    writeln('Nossa, ', nome, ' ', sobrenome, '. Seu nome é daora!')
+  
+end.

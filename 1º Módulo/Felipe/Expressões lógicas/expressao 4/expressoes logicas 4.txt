@@ -1,0 +1,8 @@
+Para A = 4, B = 7 C = 3 e D = – 3 resolva os exercícios a seguir:
+A – B == D ou B > C e ! C != D				(Verdadeiro)
+! C + D – B > 0 e A – D == B				(Verdadeiro)
+! C + D == 0 ou C != – D				(Falso)
+! – D == –3 e A > C + D					(Verdadeiro)
+! A + C == B ou C + D > A ou C != – D			(Falso)
+A + D == 1 e B – C – D == B				(Verdadeiro)
+(A + 2)/2 == (D*2) / 2 ou ! (A + 2)/2 == (C*2) / 2	(Falso)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multômetro</title>
+</head>
+<body>
+    
+</body>
+<script>    
+
+    alert('Bem Vindo a Central de Multas da Etec! \n' 
+    + 'Vamos Começar Coletando seu Espaço e seu Tempo!');
+
+    espaco = parseFloat(prompt('Digite seu Espaço: '));
+    tempo = parseFloat(prompt('Digite seu Tempo em Horas: '));
+    var vm = espaco / tempo;
+
+    if(vm) {
+
+        alert('Velocidade Média de ' + vm.toFixed(1) + "KM/H")
+        if(vm > 120) {
+            alert('MULTADO! \n' + 'HAHAHAHHAHA');
+        } else {
+            alert('Aff... Parabéns...\n' + 'Não foi Multado!')
+        }   
+
+    } else {
+        alert('Digite um Número Válido!');
+    }
+
+    location.reload();
+    
+</script>
+</html>

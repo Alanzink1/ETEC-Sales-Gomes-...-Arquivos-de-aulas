@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    salario = parseFloat(prompt('Digite seu salário:'));
+    grat = (salario / 100) * 5;
+    impos = (salario / 100) * 7;
+
+    salario_total = salario + grat - impos;
+
+    alert('O Salário final depois de 5% de gratificação e 7% de impostos pagos, resta: R$' + salario_total.toFixed(2));
+
+</script>
+</html>

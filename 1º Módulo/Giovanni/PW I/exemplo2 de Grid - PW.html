@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 500ms;
+        }
+
+        main{
+            margin: auto;
+            width: 90%;
+            height: 450px;
+            display: grid;
+            grid-template-areas: 'verde vermelho'
+                                 'verde amarelo';
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 4fr;
+            gap: 1rem;
+        }
+
+        .verde{
+            grid-area: verde;
+            background-color: green;
+        }
+
+        .vermelho{
+            grid-area: vermelho;
+            background-color: red;
+        }
+
+        .amarelo{
+            grid-area: amarelo;
+            background-color: yellow;
+        }
+
+        @media only screen and (max-width: 768px){
+
+            main{
+                grid-template-areas: 'verde'
+                                     'vermelho' 
+                                     'amarelo';
+                grid-template-columns: 1fr;
+                grid-template-rows: 3fr 2fr 3fr;
+                gap:0;
+                width: 95%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="verde"></div>
+        <div class="vermelho"></div>
+        <div class="amarelo"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+:root {
+    --fireBackground: #EC8C4C;
+    --fireType: #F10A34;
+
+    --waterBackground: #20C5F5;
+    --waterType: #265DFC;
+
+    --grassBackground: #70D090;
+    --grassType: #1B932C;
+
+    --earthBackground: #9E6E53;
+    --earthType: #583728;
+
+    --normalBackground: #FFE0CA;
+    --normalType: #7D3600;
+
+    --toxicBackground: #DDA1E7;
+    --toxicType: #8849B0;
+}
+
+.pokecard-container {
+    background: url('../Img/BackgroundPokeball.png') no-repeat right;
+    width: 382px;
+    height: 132px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-top: 16px;
+    border-radius: 24px;
+}
+
+.pokeinfo-container {
+}
+
+/* INICIO TIPOS E FUNDOS */
+
+.fire {
+    background-color: var(--fireBackground);
+}
+
+.fire-type {
+    background-color: var(--fireType);
+}
+
+.water {
+    background-color: var(--waterBackground);
+}
+
+.water-type {
+    background-color: var(--waterType);
+}
+
+.grass {
+    background-color: var(--grassBackground);
+}
+
+.grass-type {
+    background-color: var(--grassType);
+}
+
+.earth {
+    background-color: var(--earthBackground);
+}
+
+.earth-type {
+    background-color: var(--earthType);
+}
+
+.normal {
+    background-color: var(--normalBackground);
+}
+
+.normal-type {
+    background-color: var(--normalType);
+}
+
+.toxic {
+    background-color: var(--toxicBackground);
+}
+
+.toxic-type {
+    background-color: var(--toxicType);
+}
+
+/* FIM TIPOS E FUNDOS */
+
+.pokenumber-span {
+    padding-bottom: 4px;
+
+}
+
+.pokename-container {
+    opacity: 80%;
+    padding-bottom: 12px;
+}
+
+.poketype-container {
+    width: 57px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 12px;
+    gap: 2px;
+    border-radius: 16px;
+}
+
+.poketype-container img {
+    width: 15px;
+    filter: invert(1);
+}
+
+.poketypes-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.pokefront-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pokemon-img {
+    width: 125px;
+    height: 125px;
+    margin-top: -10px;
+}
+
+.like-btn {
+    width: 40px;
+    height: 40px;
+}

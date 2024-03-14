@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Urban Jungle DEMO';
+    src: url('../font/UrbanJungleDEMO.ttf');
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Urban Jungle DEMO, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+}
+
+.logo {
+
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    width: 150px;
+
+}

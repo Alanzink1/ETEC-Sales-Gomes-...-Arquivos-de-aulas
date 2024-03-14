@@ -1,0 +1,31 @@
+Program HelloWorld(output);
+
+var
+    numero: integer;
+
+begin
+  
+    writeln('-------------------------');
+    writeln(' ADIVINHADOR DE P,N ou 0');
+    writeln('-------------------------');
+    writeln('Escreva o número: ');
+    readln(numero);
+    
+    if numero > 0 then
+    begin
+        writeln('O número ', numero, ' é positivo!');
+    end;
+    
+    if numero < 0 then
+    begin
+        writeln('O número ', numero, ' é negativo!');
+    end;
+    
+    if numero = 0 then
+    begin
+        writeln('O número é zero, neutrao!');
+    end;
+    
+    readln;
+  
+end.

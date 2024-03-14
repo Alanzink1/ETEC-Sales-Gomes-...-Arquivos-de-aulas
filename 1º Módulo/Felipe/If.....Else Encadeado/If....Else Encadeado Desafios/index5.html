@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2o Grau</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var year_old = parseInt(prompt('Insira vossa idade: (ex: 17)'));
+    var category;
+
+    if(year_old < 5) {
+        category = 'Desculpe... Você não pertence a nenhuma categoria!'
+    } else if(year_old >= 5 && year_old <= 7) {
+        category = 'Infantil';
+    } else if(year_old >= 8 && year_old <= 10) {
+        category = 'Juvenil';
+    } else if(year_old >= 11 && year_old <= 15) {
+        category = 'Adolescente';
+    } else if(year_old >= 16 && year_old <= 30) {
+        category = 'Adulto';
+    } else if(year_old > 30) {
+        category = 'Sênior';
+    } else {
+        alert('Idade inválida!');
+        location.reload();
+    }
+
+    alert('Categoria: ' + category);
+
+</script>
+</html>
+
+<!-- Faça um programa que receba a idade de um nadador e 
+    mostre sua categoria, usando as regras a seguir. Para 
+    idade inferior a 5, deverá mostrar mensagem que não 
+            pertence a nenhuma categoria. -->

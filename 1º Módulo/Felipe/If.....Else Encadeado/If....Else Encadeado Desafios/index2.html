@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2o Grau</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var a = parseInt(prompt('Insira o valor de "a":'));
+    var b = parseInt(prompt('Insira o valor de "b":'));
+    var c = parseInt(prompt('Insira o valor de "c":'));
+    var r;
+    var delta;
+    var x1;
+    var x2;
+    
+    if(a != 0){
+        delta = (b*b) - 4 * a * c;
+        if(delta < 0) {
+            r = 'Não existe raiz real';
+        } else if(delta == 0) {
+            r = 'Existe raiz real x = (-' + b + ') / (2 * ' + a + ') = ' + (-b) / (2*a);
+        } else if(delta > 0) {
+            r = 'Existem duas raízes reais';
+        }
+
+        x1 = (-b + delta) / (2 * a);
+        x2 = (-b - delta) / (2 * a);
+    } else {
+        alert('Inválido!');
+    }
+
+    alert(r);
+    alert('x1 = ' + x1.toFixed(1));
+    alert('x2 = ' + x2.toFixed(1));
+
+</script>
+</html>
+
+<!-- Faça um programa para resolver equações do 2o grau. Considere que:
+• ax2 + bx + c = 0
+• A variável a deve ser diferente de zero.
+• Δ = b2 -4 * a * c
+• Δ < 0 → não existe raiz real
+• Δ = 0 → existe uma raiz real x = (-b) / (2 * a)
+• Δ > 0 → existem duas raízes reais
+▪ x1 = (-b + Δ)/ (2 * a)
+▪ x2 = (-b - Δ)/ (2 * a) -->

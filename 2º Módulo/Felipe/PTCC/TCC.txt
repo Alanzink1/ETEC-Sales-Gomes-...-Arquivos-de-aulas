@@ -1,0 +1,25 @@
+Tema: Academia UP Training
+Nome do projeto: Academia UP Training
+Cores: Verde, Azul e Branco
+Produtos: Conterá
+Justificativa: Visibilidade
+Problema/situação atual: Falta de visibilidade
+Objetivos: Ampliar sua divulgação e facilitar o acesso do usuário aos planos e informações da academia
+Solução: Criação de um site e um aplicativo
+Benefícios: Visibilidade, Facilidade e Acessibilidade
+Valor Agregado: Mostrar que vai a academia, Divulgação, Sorrisos, facilidade a informação👌👍
+
+S especifico: Academia
+M mensuravel: 
+A atingivel: Criação de site e aplicativo
+R realista: Site não irrealista e app não surreal
+T temporizável: Alcançar finalização do projeto até 30 de Novembro
+
+----------- Site ------------
+
+Página Home: Planos, Serviços, Galeria, Sobre nós, UP Blog, Matricule-se, Valores, Modalidades,
+		Horários, Portal do Aluno, Portal do Professor
+
+Portal do Aluno: Ficha Técnica, Ficha de Treino, Evolução, Alteração de Planos e cancelamentos, Pagamento
+
+Portal do Professor: Gerar treino para os alunos, Blog informativo

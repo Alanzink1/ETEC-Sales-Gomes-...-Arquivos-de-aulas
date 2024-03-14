@@ -1,0 +1,109 @@
+@font-face {
+    font-family: AvenirHeavy;
+    src: url('./font//Avenir\ Heavy/Avenir\ Heavy.ttf');
+}
+
+@font-face {
+    font-family: AvenirRegular;
+    src: url('./font//Avenir\ Regular/Avenir\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #040714;
+}
+
+.background-img {
+    width: 100%;
+    height: 120vh;
+    background-image: url('./img/Banner\ Gisney.jfif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 50px;
+
+}
+
+header button {
+    padding: 15px 20px 15px 20px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    transition: 200ms;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+main {
+    width: 20%;
+    padding-top: 60px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.logo-gisney-home {
+
+}
+
+.logo-gisney-home img {
+    width: 200px;
+}
+
+.titulo-home {
+
+}
+
+.titulo-home h2 {
+    font-size: 2.8rem;
+    font-family: AvenirHeavy;
+    line-height: 1.2em;
+    height: 100px;
+}
+
+.btn-home button {
+    width: 650px;
+    height: 65px;
+    background-color: #6421ff;
+    border-radius: 4px;
+    border: none;
+    font-family: AvenirRegular;
+    font-size: larger;
+}
+
+.btn-home button:hover {
+    background-color: #6a2df8;
+}
+
+.link-home a { 
+    font-size: 1.3rem;
+}
+
+/*-----------------------------------------------------------------------------------  */
+

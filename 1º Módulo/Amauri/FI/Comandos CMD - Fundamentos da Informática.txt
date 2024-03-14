@@ -1,0 +1,54 @@
+CRIAR ARQUIVO EM BRANCO
+type nul  > c:\info\osa\word\arq01.doc 
+
+CRIAR ARQUIVO EM BRANCO NO MODO RELATIVO
+type nul > arq01.doc
+
+DE ONDE VAI COPIAR                PARA ONDE VAI COPIAR
+copy c:\info\osa\word\arq01.doc C:\info\fi\sn  (copiar arquivos para outra pasta)
+
+COPIAR TODOS OS ARQUIVOS DE UMA VEZ SÓ
+copy c:\info\osa\word\*.* c:\info\fi\sn 
+
+DELETAR ARQUIVO
+del c:\info\osa\word
+
+DELETAR PASTA
+rd c:\info\fi\pro
+
+(\s (FORÇAR A APAGAR) \q (PARA APAGAR RÁPIDO))
+
+doskey history (MOSTRAR TODOS OS COMANDO DIGITADOS DURANTE A CRIAÇÃO E PASTAS E ARQUIVOS)
+
+MOVER ARQUIVOS E PASTAS
+LOCAL ONDE ESTA        LOCAL ONDE VAI SER MOVIDO
+move c:\info\fi\sn  -  c:\info\dd
+
+MOVER VARIOS ARQUIVOS DE UMA VEZ
+move c:\info\fi\sn*.* c:\info\dd
+
+MOVER TODOS OS ARUIVOS TERMINADOS COM DETERMINADA LETRA OU NUMERO
+move c:\info\fi\sn*3.* c:\info\dd
+move c:\info\fi\sn(*3.* TUDO TERMINADO COM "3") c:\info\dd
+
+CLS - LIMPAR TELA
+RD - APAGA ARQUIVO	
+MD - CRIAR PASTA
+TYPE - CRIAR ARQUIVO EM BRANCO 
+DOSKEY \HISTORY - LISTAR COMANDOS USADOS
+COPY - COPIAR 
+MOVE - MOVER
+DIR - LISTAR ARQUIVOS
+
+
+_ARV - ARVORE
+_REV - ?????s
+
+
+
+
+METACARACTER
+* - TUDO
+? - SUBSTITUI UM DE CADA VEZ
+
+doskey \history > lalaalalal

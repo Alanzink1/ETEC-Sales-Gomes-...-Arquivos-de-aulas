@@ -1,0 +1,35 @@
+https://origamid.com/projetos/flexbox-guia-completo/
+
+Definir container com flex:
+display: flex;
+
+Aplicar distância entre itens:
+gap: 10px;
+
+Aplicar preenchimento interno:
+padding-top:  5px;
+padding-right: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+padding: 5px; (nos 4 lados)
+
+Aplicar distânica externa:
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin: 5px; (nos 4 lados)
+
+Deixar DIV ou qualquer elemento block no centro:
+margin: auto;
+
+Definir direção do display flex:
+flex-direction: row; (padrão - horizontal);
+flex-direction: column; (padrão - vertical);
+
+Definir posicionamento dos itens:
+justify-content: flex-start / flex-end / center / space-between / space-around / space-evenly;
+align-itens: flex-start / flex-end / center
+
+Para fazer os itens quebrarem no container
+flex-wrap: wrap; (por padrão é nowrap)

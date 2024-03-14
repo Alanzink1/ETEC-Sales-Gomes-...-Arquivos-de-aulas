@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+* {
+
+    font-family: Roboto, sans-serif;
+    color: #FFFFFF;
+
+}
+
+body {
+    background-color: #456;
+    background-image: url('../img/fundo.png');
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #f0d1ac;
+}
+
+img {
+    height: 300px;
+}
+
+#principal-img {
+    text-align: center;
+}
+
+#past-events-images {
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+}
+
+.description-container p {
+    text-align: justify;
+}
+
+table {
+    margin: auto;
+    border: 1px solid #FFFFFF;
+    width: 49em;
+}
+
+th {
+    font-family: serif;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.icotec {
+    font-size: 2em;
+}
+
+.location {
+    padding-top: 0.6em;
+    padding-bottom: 6.5em;
+}

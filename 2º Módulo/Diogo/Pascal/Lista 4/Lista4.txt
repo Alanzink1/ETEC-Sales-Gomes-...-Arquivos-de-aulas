@@ -1,0 +1,578 @@
+EX1 ---------------------------------------------------------
+Program HelloWorld(output);
+var
+    valores: array[1..10] of integer;
+    soma: integer;
+    cont: integer;
+begin
+
+    writeln('Escreva o valor inicial: ');
+    readln(valores[0]);
+    soma:=valores[0];
+
+    for cont := 1 to 8 do
+    begin
+        writeln('Escreva o próximo valor: ');
+        readln(valores[cont]);
+        soma :=  soma + valores[cont];
+    end;
+    
+    writeln('Escreva o valor final: ');
+    readln(valores[9]);
+    soma := soma + valores[9];
+    
+    writeln('A soma de todos os valores digitados é: ', soma);
+    
+end.
+
+EX2 ---------------------------------------------------------
+
+Program HelloWorld(output);
+var
+    valores: array[1..5] of real;
+    soma: real;
+    media: real;
+    cont: integer;
+begin
+
+    writeln('Vamos fazer uma média de valores?');
+    readln();
+    writeln('Vamos começar com uma média de 5 números como exemplo!');
+    writeln('Digite para mim 5 números. ');
+
+    for cont := 0 to 4 do
+    begin
+        writeln('Escreva o ', cont+1, 'º número: ');
+        readln(valores[cont]);
+        soma :=  soma + valores[cont];
+    end;
+    
+    media := soma/5;
+    
+    writeln('Incrível! Você arrasou!');
+    writeln('Agora vamos somar todos esses números! O resultado foi: ', soma:6:2);
+    readln();
+    writeln('Como foram 5 números somados, devemos agora dividir a soma deles por 5!');
+    readln();
+    
+    writeln('A média é: ', media:6:2);
+    
+    writeln('PARABÉNS!!!');
+    
+end.
+
+EX3 ---------------------------------------------------------
+
+Program HelloWorld(output);
+var
+    valores: array[1..10] of integer;
+    cont: integer;
+    chute_usuario: integer;
+    acerto: integer;
+    encontrado: integer;
+    i: integer;
+    
+begin
+    Randomize;
+    encontrado := 0;
+    acerto := 2;
+
+    writeln('Tenho aqui comigo uma caixa!');
+    readln();
+    writeln('Para quem acertar algum número que esteja aqui dentro, ganha 5 balas!');
+    readln();
+    writeln('VAMOS COMEÇAR!!');
+    
+    writeln('Embaralhando os números...');
+    for cont := 0 to 10 do
+    begin
+        valores[cont] := Random(100) + 1;
+    end;
+    writeln('Números embaralhados!');
+    writeln('');
+    
+    cont := 5;
+    
+    while (cont <> 0) do
+    begin
+        
+        writeln('(', cont, ') Meu chute é: ');
+        readln(chute_usuario);
+        
+        for i := 0 to 9 do
+        begin
+            if(valores[i] = chute_usuario) then
+            begin
+                encontrado := 1;
+            end
+        end;
+        
+        if(encontrado = 1) then
+        begin
+            writeln('PARABÉNS! VOCÊ ACERTOU!!');
+            cont := 0;
+        end;
+        
+        if(encontrado = 0) then
+        begin
+            if(cont = 1) then
+            begin
+                writeln('Sinto muito... Não foi dessa vez!');
+            end;
+            cont := cont -1;
+        end;
+    end;
+    
+    
+end.
+
+EX4 -----------------------------------------------
+
+
+Program HelloWorld(output);
+var
+    caixa: array[1..5] of integer;
+    caixa2: array[1..5] of integer;
+    i: integer;
+    primeiro: integer;
+    
+begin
+    primeiro := 0;
+    
+    for i := 0 to 4 do
+    begin
+        writeln('Adicionar valor na caixa: ');
+        readln(caixa[i]);
+    end;
+    
+    for i := 0 to 4 do
+    begin
+        caixa2[i] := caixa[i];
+    end;
+    
+    writeln('Caixa:');
+    for i := 0 to 4 do
+    begin
+        if(primeiro = 0) then
+        begin
+            write(caixa[i]);
+            primeiro := 1;
+        end
+        else
+        begin
+            write(', ', caixa[i]);
+        end;
+    end;
+    
+    primeiro := 0;
+    
+    writeln('');
+    writeln('Caixa Reserva:');
+    for i := 0 to 4 do
+    begin
+        if(primeiro = 0) then
+        begin
+            write(caixa2[i]);
+            primeiro := 1;
+        end
+        else
+        begin
+            write(', ', caixa2[i]);
+        end;
+    end;
+    
+end.
+
+EX5 -----------------------------------------------------------
+
+Program HelloWorld(output);
+var
+    matriz: array[1..4, 1..4] of integer;
+    numero_usuario: integer;
+    i: integer;
+    j: integer;
+begin
+    
+    for i := 1 to 4 do
+    begin
+        for j := 1 to 4 do
+        begin
+            writeln('Digita aí mano: ');
+            readln(matriz[i,j]);
+        end;
+    end;
+    
+    for i := 1 to 4 do
+    begin
+        writeln('');
+        for j := 1 to 4 do
+        begin
+            write(matriz[i,j]);
+        end;
+    end;
+    
+end.
+
+EX6 -----------------------------------------------------------------
+
+Program HelloWorld(output);
+var
+    matriz1, matriz2: array[1..4, 1..4] of integer;
+    numero_usuario: integer;
+    i: integer;
+    j: integer;
+begin
+    
+    for i := 1 to 2 do
+    begin
+        for j := 1 to 2 do
+        begin
+            writeln('1ª Matriz: Digita aí mano: ');
+            readln(matriz1[i,j]);
+        end;
+    end;
+    
+    for i := 1 to 2 do
+    begin
+        for j := 1 to 2 do
+        begin
+            writeln('2ª Matriz: Digita aí mano: ');
+            readln(matriz2[i,j]);
+        end;
+    end;
+    
+    for i := 1 to 2 do
+    begin
+        writeln('');
+        for j := 1 to 2 do
+        begin
+            write(' / ', matriz1[i,j] * matriz2[i,j], ' / ');
+        end;
+    end;
+    
+    
+    
+end.
+
+EX 7 ---------------------------------------------------------------
+
+Program HelloWorld(output);
+var
+    cliente: record
+        codigo: integer;
+        nome: string;
+        RG: string;
+        telefone: string;
+        endereco: string;
+        CEP: string;
+    end;
+    resposta_usuario: string;
+    codigo : integer;
+begin
+    Randomize;
+    
+    writeln('Você já tem um código? (s/n)');
+    readln(resposta_usuario);
+    if(resposta_usuario = 's') then
+    begin
+        writeln('Qual seu código?');
+        readln(cliente.codigo);
+    end
+    else if (resposta_usuario = 'n') then
+    begin
+        writeln('Gerando código...');
+        codigo:= Random(100) + 1;
+        writeln('Seu código é: ', codigo);
+        cliente.codigo := codigo;
+    end
+    else
+    begin
+        writeln('Resposta inválida!');
+    end;
+    
+    writeln('Qual seu nome?');
+    readln(cliente.nome);
+    
+    writeln('Seu RG?');
+    readln(cliente.RG);
+    
+    writeln('Número telefonico: ');
+    readln(cliente.telefone);
+    
+    writeln('Endereço: ');
+    readln(cliente.endereco);
+    
+    writeln('Vosso CEP: ');
+    readln(cliente.CEP);
+    writeln('');
+    writeln('');
+    writeln('Cadastrando Usuário...');
+    writeln('');
+    writeln('');
+    writeln('ID: ', cliente.codigo);
+    writeln('Nome: ', cliente.nome);
+    writeln('RG: ', cliente.RG);
+    writeln('Telefone: ', cliente.telefone);
+    writeln('Endereço: ', cliente.endereco);
+    writeln('CEP: ', cliente.CEP);
+    
+end.
+
+EX 8 ---------------------------------------------------------------
+
+Program HelloWorld(output);
+
+var 
+    aluno:    record
+       nome:    string;
+       notap:   real;
+       notam:   real;
+       notai:   real;
+       media:   real;
+       soma:    real;
+    end;
+        
+begin
+    writeln('Digite seu nome:');
+    readln(aluno.nome);
+    
+    aluno.soma := 0;
+
+    writeln('Digite sua nota de portugues:');
+    readln(aluno.notap);
+    aluno.soma := (aluno.notap + aluno.soma);
+    
+    writeln('Digite sua nota de matematica:');
+    readln(aluno.notam);
+    aluno.soma := (aluno.notam + aluno.soma);
+    
+    writeln('Digite sua nota de ingles:');
+    readln(aluno.notai);
+    aluno.soma := (aluno.notai + aluno.soma);
+    
+    aluno.media:= aluno.soma/3;
+
+    
+    if aluno.media >= 7 then 
+        begin
+            write('aprovado');
+        end;
+    if aluno.media < 7 then 
+        begin 
+            write('reprovado');
+        end;
+        
+end.
+
+EX 9 ---------------------------------------------------------------
+
+Program HelloWorld(output);
+type
+    funcionario_vendedor = record
+        nome: string;
+        cargo: string;
+        valor_vendas: real;
+        percentual_bonus: real;
+        presente: string;
+    end;
+
+var
+    funcionarios: array[1..3] of funcionario_vendedor;
+    contador: integer;
+begin
+
+    for contador := 1 to 3 do
+    begin
+        writeln('Nome: ');
+        readln(funcionarios[contador].nome);
+        
+        writeln('Cargo: ');
+        readln(funcionarios[contador].cargo);
+        
+        writeln('Valor das Vendas: ');
+        readln(funcionarios[contador].valor_vendas);
+        
+        writeln('Percentual de Bonûs: ');
+        readln(funcionarios[contador].percentual_bonus);
+        
+        writeln('Presente: ');
+        readln(funcionarios[contador].presente);
+        
+        writeln('');
+        writeln('');
+        writeln('-------------------');
+        writeln('');
+        
+    end;
+    
+    for contador := 1 to 3 do
+    begin
+        writeln('----------------------');
+        writeln('Nome: ', funcionarios[contador].nome);
+        writeln('Cargo: ', funcionarios[contador].cargo);
+        writeln('Valor das Vendas: ', funcionarios[contador].valor_vendas:6:2);
+        writeln('Percentual de Bonûs: ', funcionarios[contador].percentual_bonus:6:2);
+        writeln('Presente: ', funcionarios[contador].presente);
+        
+    end;
+    
+end.
+
+EX 10 ---------------------------------------------------------------
+
+Program HelloWorld(output);
+type
+    funcionario_vendedor = record
+        nome: string;
+        cargo: string;
+        valor_vendas: real;
+        percentual_bonus: real;
+        presente: string;
+    end;
+
+var
+    funcionarios: array[1..3] of funcionario_vendedor;
+    contador: integer;
+begin
+
+    for contador := 1 to 3 do
+    begin
+        writeln('Nome: ');
+        readln(funcionarios[contador].nome);
+        
+        writeln('Cargo: ');
+        readln(funcionarios[contador].cargo);
+        
+        writeln('Valor das Vendas: ');
+        readln(funcionarios[contador].valor_vendas);
+        
+        writeln('Percentual de Bonûs: ');
+        readln(funcionarios[contador].percentual_bonus);
+        
+        writeln('Presente: ');
+        readln(funcionarios[contador].presente);
+        
+        writeln('');
+        writeln('');
+        writeln('-------------------');
+        writeln('');
+        
+    end;
+    
+    for contador := 1 to 3 do
+    begin
+        if (funcionarios[contador].valor_vendas > 2000) then
+        begin
+            writeln('Parábens, ', funcionarios[contador].nome, '. Por causa do valor das vendas, você ganhou uma Bicicleta Barra Forte');
+        end;
+        
+        if (funcionarios[contador].valor_vendas > 1000) and (funcionarios[contador].valor_vendas < 1999) then
+        begin
+            writeln('Parábens, ', funcionarios[contador].nome, '. Por causa do valor das vendas, você ganhou um urso de pelúcia');
+        end;
+        
+        if (funcionarios[contador].valor_vendas < 1000) then
+        begin
+            writeln('Parábens, ', funcionarios[contador].nome, '. Por causa do valor das vendas, você ganhou um abraço');
+        end;
+    end;
+    
+end.
+
+EX 11 ---------------------------------------------------------------
+
+Program HelloWorld(output);
+type
+    aluno = record
+        nome: string;
+        PW: string;
+        BD: string;
+        DS: string;
+        SE: string;
+    end;
+
+var
+    alunos: array[1..3] of aluno;
+    contador: integer;
+begin
+
+    for contador := 1 to 3 do
+    begin
+        writeln('Nome do Aluno: ');
+        readln(alunos[contador].nome);
+        
+        writeln('Menção em PW: ');
+        readln(alunos[contador].PW);
+        
+        writeln('Menção em BD: ');
+        readln(alunos[contador].BD);
+        
+        writeln('Menção em DS: ');
+        readln(alunos[contador].DS);
+        
+        writeln('Menção em SE: ');
+        readln(alunos[contador].SE);
+        
+        writeln('');
+        writeln('');
+        writeln('-------------------');
+        writeln('');
+        
+    end;
+    
+    for contador := 1 to 3 do
+    begin
+        if (alunos[contador].PW = 'MB') or (alunos[contador].PW = 'B') then
+        begin
+            writeln('Parábens, ', alunos[contador].nome, '. Você foi aprovado em PW!');
+        end
+        else
+        begin
+            writeln('Sorry, ', alunos[contador].nome, '. Você foi reprovado em PW!');
+        end;
+        
+        
+        
+        
+        if (alunos[contador].BD = 'MB') or (alunos[contador].PW = 'B') then
+        begin
+            writeln('Parábens, ', alunos[contador].nome, '. Você foi aprovado em BD!');
+        end
+        else
+        begin
+            writeln('Sorry, ', alunos[contador].nome, '. Você foi reprovado em BD!');
+        end;
+    
+    
+    
+        
+        if (alunos[contador].DS = 'MB') or (alunos[contador].PW = 'B') then
+        begin
+            writeln('Parábens, ', alunos[contador].nome, '. Você foi aprovado em DS!');
+        end
+        else
+        begin
+            writeln('Sorry, ', alunos[contador].nome, '. Você foi reprovado em DS!');
+        end;
+        
+        
+        
+        
+        
+        if (alunos[contador].SE = 'MB') or (alunos[contador].PW = 'B') then
+        begin
+            writeln('Parábens, ', alunos[contador].nome, '. Você foi aprovado em SE!');
+        end
+        else
+        begin
+            writeln('Sorry, ', alunos[contador].nome, '. Você foi reprovado em SE!');
+        end;
+        
+        writeln('');
+        writeln('');
+        writeln('--------------------------------------');
+        writeln('');
+        
+    end;
+    
+end.

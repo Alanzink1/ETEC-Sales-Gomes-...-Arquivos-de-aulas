@@ -1,0 +1,26 @@
+Program HelloWorld(output);
+var
+    notaAluno: real;
+    valor: boolean;
+
+begin
+    valor := true;
+    
+    repeat
+        writeln('Digite sua nota: ');
+        readln(notaAluno);
+    until (notaAluno >= 0) and (notaAluno <= 10);
+    
+    if notaAluno < 6 then
+    begin
+        writeln('Você foi reprovado!');
+    end
+    else if (notaAluno >= 6) and (notaAluno <= 7) then
+    begin
+        writeln('Você está de recuperação!');
+    end
+    else
+    begin
+        writeln('Meus parabéns! Você passou!');
+    end;
+end.

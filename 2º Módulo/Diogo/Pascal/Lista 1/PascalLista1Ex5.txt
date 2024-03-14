@@ -1,0 +1,16 @@
+Program HelloWorld(output);
+var
+    base: real;
+    altura: real;
+    area: real;
+begin
+    writeln('Digite a base do quadrado: ');
+    readln(base);
+    
+    writeln('Digite a altura do quadrado: ');
+    readln(altura);
+    
+    area := base * altura;
+    
+    writeln('A área do quadrado é ', area:6:2, 'm2')
+end.

@@ -1,0 +1,142 @@
+@font-face{
+    font-family: 'dancing-script';
+    src: url(../FONTES/DancingScript-VariableFont_wght.ttf);
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'dancing-script';
+        }
+
+        body {
+            background-color: #F0F0F3;
+        }
+
+        .container {
+            width: 100%;
+            height: 120px;
+            background-color: #8B5850;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .container nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container nav {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .container nav i{
+            color: white;
+            font-family: 'dancing-script';
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 80%;
+            justify-content: center;
+            margin: auto;
+
+        }
+
+        main .produto {
+            width: 250px;
+            height: 200px;
+        }
+
+        main .produto .descricao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main .produto .descricao .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        main .produto .descricao .button {
+            height: 30px;
+            width: 80px;
+            background-color: #421F19;
+            color: white;
+            border-radius: 7px;
+            font-family: 'dancing-script';
+            font-size: 20px;
+        }
+
+        .nome{
+            font-family: 'dancing-script';
+            font-size: 20px;
+        }
+        .info .nome {
+            font-weight: bold;
+        }
+
+        .logo {
+            position: relative;
+            left: 50px;
+            bottom: 10px;
+            width: 150px;
+        }
+
+        #icon{
+            filter: invert(100%);
+            
+        }
+
+        #icon:hover {
+            filter: invert(50%);
+        }
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 200px;
+
+        }
+
+        #links{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .icon {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .produto{
+            margin-top: 100px;
+            text-align: center;
+        }
+        footer{
+            background-color:  #8B5850;
+            width: 100%;
+            height: 80px;
+        }
+
+       #item{
+           width: 100px;
+           height: 100px;
+           
+       }
+

@@ -1,0 +1,6 @@
+Para A = 3, B = 7 C = 2 e D = -2 resolva os exercícios a seguir:
+A+D < B+C/2 (VERDADEIRO)
+A – D == 9 (FALSO)
+!B*2 != A+B e A*C > B-C (FALSO)
+B+C == B – D (VERDADEIRO)
+C+C == C – D ou A + B > 10 (VERDADEIRO)

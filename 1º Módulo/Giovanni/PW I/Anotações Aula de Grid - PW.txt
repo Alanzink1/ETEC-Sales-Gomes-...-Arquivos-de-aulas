@@ -1,0 +1,10 @@
+nos filhos (item) -> 
+grid-area: /* para nomear os filhos */
+
+no pai (container) -> 
+display: grid; /* para dizer que é para se comportar como grid */
+grid-template-areas: 	'item1 item1' 
+			'item1 item2';
+/* para definir o posicionamento dos itens no grid */
+grid-template-columns: 1fr 2fr; /* para definir largura das colunas */
+grid-template-rows: 1fr 2fr; /* para definir altura das linhas */

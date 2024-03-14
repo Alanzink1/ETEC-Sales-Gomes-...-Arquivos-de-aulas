@@ -1,0 +1,34 @@
+desafio 2
+
+Program HelloWorld(output);
+var
+    qi_usuario: real;
+begin
+  writeln('De quanto é o seu QI?');
+  readln(qi_usuario);
+  
+  if qi_usuario < 50 then
+  begin
+    writeln('QI de macaco!');
+    end;
+    if (qi_usuario >= 50) then
+    begin
+        if (qi_usuario <= 60) then
+        begin
+            writeln('QI humano!');
+        end;
+    end;
+    if (qi_usuario >= 61) then
+    begin
+        if (qi_usuario <= 100) then
+        begin
+            writeln('QI humano evoluido!');
+        end;
+    end;
+    if qi_usuario > 100 then
+    begin
+        writeln('ALIGENIGENA!!!!!!');
+    end;
+    
+    readln;
+end.

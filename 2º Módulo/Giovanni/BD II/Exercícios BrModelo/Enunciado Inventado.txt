@@ -1,0 +1,5 @@
+Um cantor precisava criar um software para gerenciar suas musicas, ele contratou 350 programadores,
+porém nenhum conseguiu encarar o desafio. Faça um software que possa conter as informações do cantor, em relação
+com suas música com coisas básicas sobre a musica, e relacionada a uma playlist referente ao album da musica, contendo nome da playlist, data criada, 
+etc... Contendo um atributo para quantidade de vezes tocada.
+O programador que terminar o diagrama ganha 5 coca colas e 10 pães segundo o cartaz

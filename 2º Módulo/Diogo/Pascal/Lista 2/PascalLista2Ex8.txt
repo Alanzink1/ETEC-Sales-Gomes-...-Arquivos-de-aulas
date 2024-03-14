@@ -1,0 +1,40 @@
+Program HelloWorld(output);
+var
+    nao_sei: real;
+    primeiro_valor: real;
+    segundo_valor: real;
+    terceiro_valor: real;
+begin
+    writeln('Digite um valor:');
+    readln(primeiro_valor);
+    
+    writeln('Digite mais um valor:');
+    readln(segundo_valor);
+    
+    writeln('Digite um último valor:');
+    readln(terceiro_valor);
+    
+    if primeiro_valor < segundo_valor then
+    begin
+        nao_sei := primeiro_valor;
+        primeiro_valor := segundo_valor;
+        segundo_valor := nao_sei;
+    end;
+    
+    if segundo_valor < terceiro_valor then
+    begin
+        nao_sei := segundo_valor;
+        segundo_valor := terceiro_valor;
+        terceiro_valor := nao_sei;
+    end;
+    
+    if primeiro_valor < segundo_valor then
+    begin
+        nao_sei := primeiro_valor;
+        primeiro_valor := segundo_valor;
+        segundo_valor := nao_sei;
+    end;
+    
+    writeln('Decrescente: ', primeiro_valor:6:2, segundo_valor:6:2, terceiro_valor:6:2);
+
+end.

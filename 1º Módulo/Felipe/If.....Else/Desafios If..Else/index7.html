@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario Fixo</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var slr_fixo = parseFloat(prompt('Insira seu Salário Fixo: '));
+    var vlr_vendas = parseFloat(prompt('Insira o Valor das Vendas Efetuadas: '));
+
+    if(vlr_vendas < 1500) {
+        slr_total = slr_fixo + slr_fixo / 100 * 3;
+        alert('Seu Salário Total é de R$' + slr_total);
+    } else {
+        slr_total = slr_fixo + slr_fixo / 100 * 5;
+        alert('Seu Salário Total é de R$' + slr_total);
+    }
+
+</script>
+</html>
+
+<!-- 
+    Ler o salário fixo e o valor das vendas efetuadas 
+    pelo vendedor de uma empresa. Sabendo-se que ele recebe 
+    uma comissão de 3% sobre o total das vendas até R$ 1.500,00 
+    mais 5% sobre o que ultrapassar este valor, calcular e
+                escrever o seu salário total. -->

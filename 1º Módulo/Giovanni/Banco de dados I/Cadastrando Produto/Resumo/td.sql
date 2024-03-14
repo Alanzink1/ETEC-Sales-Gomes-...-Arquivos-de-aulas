@@ -1,0 +1,8 @@
+CREATE TABLE produto(
+
+	idproduto INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(30) NOT NULL,
+	preco DECIMAL(10,2) NOT NULL,
+	codbarras VARCHAR(50) NOT NULL UNIQUE
+
+);

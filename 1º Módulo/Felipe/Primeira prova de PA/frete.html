@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comissão</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var frete;
+    var qtd_km = parseFloat(prompt('Digite a quantidade de km rodados: '));
+    if(qtd_km < 100) {
+        frete = qtd_km * 0.92 + 18;
+    } else {
+        frete = qtd_km * 0.92 + 40;
+    }
+
+    alert(frete);
+</script>
+</html>

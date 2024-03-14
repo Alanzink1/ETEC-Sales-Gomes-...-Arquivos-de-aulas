@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescente</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var v1 = parseFloat(prompt('Digite o Primeiro Valor: '));
+    var v2 = parseFloat(prompt('Digite o Segundo Valor: '));
+    var result;
+
+    if(v1 != v2) {
+        maior = v1 > v2 ? v1 : v2;
+        menor = v1 < v2 ? v1 : v2;
+        alert(`A Ordem Crescente deles é ${menor}, ${maior}`)
+    } else {
+        alert('Inválido!')
+    }
+
+</script>
+</html>
+
+<!-- Ler dois valores (considere que não serão 
+    lidos valores iguais) e escrevê-los em ordem crescente. -->

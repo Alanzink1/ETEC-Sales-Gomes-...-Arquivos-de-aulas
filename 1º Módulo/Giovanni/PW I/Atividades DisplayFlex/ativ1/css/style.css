@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.painel {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.itens {
+    width: 150px;
+    height: 150px;
+    background-color: darkred;
+}

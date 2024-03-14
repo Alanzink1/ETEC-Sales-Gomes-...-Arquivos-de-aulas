@@ -1,0 +1,13 @@
+body {
+
+    background: url("../img/background.png") no-repeat right bottom;
+
+    /* background-image: url("../img/background.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: right top; */
+}
+
+h2 {
+    color: blue;
+}

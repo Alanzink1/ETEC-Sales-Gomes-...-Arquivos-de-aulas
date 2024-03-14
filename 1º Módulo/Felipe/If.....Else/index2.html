@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+</head>
+<body>
+    
+</body>
+<script>    
+
+    alert('Bem Vindo a Secretaria Boletal da Etec! \n' 
+    + 'Vamos Coletar suas Notas para Calcular sua Média!');
+
+    n1 = parseFloat(prompt('Digite sua Primeira Nota: '));
+    n2 = parseFloat(prompt('Digite sua Segunda Nota: '));
+    var m = (n1 + n2) / 2;
+
+    if(m) {
+
+        alert('Sua Média é de ' + m.toFixed(1));
+        if(m >= 6) {
+            alert('Aff... Parabéns...\n' + 'Você Passou!');
+        } else {
+            alert('REPROVADO! \n' + 'HAHAHAHHAHA');
+        }   
+
+    } else {
+        alert('Digite uma Nota Válida!');
+    }
+
+    location.reload();
+    
+</script>
+</html>

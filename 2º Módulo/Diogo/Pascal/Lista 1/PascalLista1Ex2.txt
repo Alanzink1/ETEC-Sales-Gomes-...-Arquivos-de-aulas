@@ -1,0 +1,51 @@
+Program HelloWorld(output);
+var
+    numero: integer;
+begin
+    
+    writeln('Digite um número de 1 a 7: ');
+    readln(numero);
+    
+    if(numero <= 0) or (numero >= 8) then
+    begin
+        writeln('Inválido. Reinicie o programa!');
+    end;
+    
+    if(numero = 1) then
+    begin
+        writeln('Domingão do faustao');
+    end;
+    
+    if(numero = 2) then
+    begin
+        writeln('Segundona do faustao');
+    end;
+    
+    if(numero = 3) then
+    begin
+        writeln('Terçona do faustao');
+    end;
+    
+    if(numero = 4) then
+    begin
+        writeln('Quartona do faustao');
+    end;
+    
+    if(numero = 5) then
+    begin
+        writeln('Quintona do faustao');
+    end;
+    
+    if(numero = 6) then
+    begin
+        writeln('Sextona do faustao');
+    end;
+    
+    if(numero = 7) then
+    begin
+        writeln('Sabadao do faro');
+    end;
+    
+    readln;
+  
+end.

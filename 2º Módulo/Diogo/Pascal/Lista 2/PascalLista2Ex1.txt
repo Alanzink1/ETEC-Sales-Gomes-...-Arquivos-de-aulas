@@ -1,0 +1,65 @@
+Program HelloWorld(output);
+uses sysutils;
+
+var
+    nome: string;
+    idade:  integer;
+    salario:  real;
+    cidade:  string;
+    estado:  string;
+    data_de_nascimento: string;
+    CPF:  string;
+    RG:  string;
+    endereco:  string;
+    conectado: boolean;
+    bairro:  string;
+    data_atual:  string;
+    ano:  integer;
+    percentual_de_desconto: real;
+    altura:  real;
+    peso:  real;
+    valor_em_reais:  real;
+    hora_atual:  string;
+    habilitado:  boolean;
+begin
+    
+    nome := 'Franciscano Silvestre';
+    idade := 47;
+    salario := 16250.55;
+    cidade := 'Londres';
+    estado := 'Minas Gerais';
+    data_de_nascimento := '18/05/1972';
+    CPF := '123.159.695-60';
+    RG := '60.123.485-X';
+    endereco := 'Rua Alferedo Alfires, 458';
+    conectado := false;
+    bairro := 'Centro';
+    data_atual := '20/02/2024';
+    ano := 2024;
+    percentual_de_desconto := 12;
+    altura := 1.80;
+    peso := 70;
+    valor_em_reais :=  1200.20;
+    hora_atual := '21:52';
+    habilitado := true;
+    
+    writeln('Meu nome é ', nome);
+    writeln('Minha idade é ', idade);
+    writeln('Meu salario é de ', salario:6:2);
+    writeln('Minha cidade é ', cidade);
+    writeln('Meu estado é ', estado);
+    writeln('Eu nasci em ', data_de_nascimento);
+    writeln('Meu CPF é ', CPF);
+    writeln('Meu RG é ', RG);
+    writeln('Meu endereco é ', endereco, ', ', bairro);
+    writeln('Conectado: ', conectado);
+    writeln('Hoje é ', data_atual);
+    writeln('Estamos em ', ano);
+    writeln('Tenho desconto de ', percentual_de_desconto:6:2);
+    writeln('Minha altura é ', altura:6:2, 'cm');
+    writeln('Meu peso é de ', peso:6:2, 'kg');
+    writeln('Valor em reais é ', valor_em_reais:6:2);
+    writeln('Agora são ', hora_atual);
+    writeln('Habilitado: ', habilitado);
+    
+end.

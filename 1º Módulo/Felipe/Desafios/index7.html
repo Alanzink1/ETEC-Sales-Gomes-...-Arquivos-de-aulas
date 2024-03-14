@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    hrs_trblhds = parseFloat(prompt('Digite suas Horas Trabalhadas:'));
+    salario_mnimo = parseFloat(prompt('Digite seu salário minimo:'));
+
+    metade_salario_mnimo = salario_mnimo / 2;
+
+    valor_hr = hrs_trblhds * metade_salario_mnimo;
+    salario_bruto = hrs_trblhds * metade_salario_mnimo;
+
+    impos = (salario_bruto / 100) * 3;
+    salario_total = salario_bruto - impos;
+
+    alert('Seu salário será de R$' + salario_total);
+
+
+</script>
+</html>

@@ -1,0 +1,41 @@
+Program HelloWorld(output);
+var
+
+    valor1: real;
+    valor2: real;
+    operador: string;
+    resultado: real;
+
+begin
+    writeln('Digite um valor: ');
+    readln(valor1);
+    
+    writeln('Digite mais um valor: ');
+    readln(valor2);
+    
+    writeln('Agora digite um operador:');
+    readln(operador);
+    
+    if operador = '+' then
+    begin
+        resultado := valor1 + valor2;
+    end
+    else if operador = '-' then
+    begin
+        resultado := valor1 - valor2;
+    end
+    else if operador = '*' then
+    begin
+        resultado := valor1 * valor2;
+    end
+    else if operador = '/' then
+    begin
+        resultado := valor1 / valor2;
+    end
+    else
+    begin
+        writeln('Inválido!');
+    end;
+    writeln('Seu resultado foi: ', resultado:6:2);
+    
+end.

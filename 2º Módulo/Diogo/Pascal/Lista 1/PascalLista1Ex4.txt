@@ -1,0 +1,29 @@
+Program HelloWorld(output);
+var
+    idade: integer;
+begin
+    writeln('Digite sua idade: ');
+    readln(idade);
+    
+    if idade < 12 then
+    begin
+        writeln('criança');
+    end
+    
+    else if idade < 18 then
+    begin
+        writeln('adolescente');
+    end
+    
+    else if idade < 60 then
+    begin
+        writeln('adulto');
+    end
+    
+    else if idade > 60 then
+    begin
+        writeln('idoso');
+    end;
+    
+    
+end.

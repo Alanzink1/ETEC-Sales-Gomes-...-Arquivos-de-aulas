@@ -1,0 +1,12 @@
+Program HelloWorld(output);
+var
+    salario: real;
+    subtraido: real;
+begin
+    writeln('Digite vosso sarálio: ');
+    readln(salario);
+    
+    subtraido := salario - (salario / 10);
+    
+    writeln('O seu salário subtraindo 10% fica R$', subtraido:6:2);
+end.

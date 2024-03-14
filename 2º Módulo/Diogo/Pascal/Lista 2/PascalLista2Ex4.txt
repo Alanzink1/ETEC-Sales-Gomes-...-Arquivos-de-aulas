@@ -1,0 +1,19 @@
+Program HelloWorld(output);
+var
+    idadeUsuario: integer;
+
+begin
+
+    writeln('Quantos anos você tem?');
+    readln(idadeUsuario);
+
+    if idadeUsuario > 16 then
+    begin
+        writeln('Você já pode votar!');
+    end
+    else
+    begin
+        writeln('Você ainda não pode votar!');
+    end;
+    
+end.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulos</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var x = parseFloat(prompt('Insira o valor de X:'));
+    var y = parseFloat(prompt('Insira o valor de Y:'));
+    var z = parseFloat(prompt('Insira o valor de Z:'));
+    var t;
+
+    if(z < y+x || y < x+z || x < y+z) {
+
+        if(x == y || y == z || x == z) {
+            t = 'É um Triângulo Isóceles'
+        } else if(x != y && x != z && y != z) {
+            t = 'É um Triângulo Escaleno'
+        } else if(x == y && x == z) {
+            t = 'É um Triângulo Equilatero'
+        }
+
+    } else {
+        t = 'Não é um triângulo!'
+    }
+
+    alert(t)
+
+</script>
+</html>
+
+<!-- Dados três valores X, Y e Z, verifique se eles podem ser os 
+    comprimentos dos lados de um triângulo e, se forem, verifique se é 
+    um triângulo equilátero, isósceles ou escaleno. Se eles não formarem 
+                um triângulo, escreva uma mensagem. 
+                            Considere que:
+• o comprimento de cada lado de um triângulo é menor que a soma dos outros dois lados;
+• chama-se equilátero o triângulo que tem três lados iguais;
+• denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais;
+• recebe o nome de escaleno o triângulo que tem os três lados diferentes -->

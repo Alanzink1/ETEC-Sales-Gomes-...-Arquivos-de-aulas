@@ -1,0 +1,18 @@
+Program HelloWorld(output);
+var
+    ano_nascimento_usuario: integer;
+begin
+    writeln('Qual seu ano de nascimento?');
+    readln(ano_nascimento_usuario);
+    ano_nascimento_usuario:= 2024 - ano_nascimento_usuario;
+    
+    if(ano_nascimento_usuario >= 18) then
+    begin
+        writeln('Você é maior de idade!');
+    end
+    else
+    begin
+        writeln('Você é menor de idade!');
+    end;
+
+end.

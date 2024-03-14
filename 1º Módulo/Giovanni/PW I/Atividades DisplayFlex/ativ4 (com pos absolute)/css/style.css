@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: darkred;
+}
+
+.circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.little-square{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+}

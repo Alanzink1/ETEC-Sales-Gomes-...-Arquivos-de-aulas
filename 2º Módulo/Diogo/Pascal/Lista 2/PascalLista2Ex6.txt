@@ -1,0 +1,24 @@
+Program HelloWorld(output);
+var
+    vogais: array[1..5] of string = ('a', 'e', 'i', 'o', 'u');
+    letra_usuario: string;
+    letra: string;
+begin
+    writeln('Digite uma letra:');
+    readln(letra_usuario);
+    
+    for letra in vogais do
+    begin
+        if letra_usuario = letra then
+        begin
+            writeln('Isso é uma vogal!');
+            exit;
+        end
+        else
+        begin
+            writeln('Isso é uma consoante!');
+            exit;
+        end;
+    end;
+
+end.

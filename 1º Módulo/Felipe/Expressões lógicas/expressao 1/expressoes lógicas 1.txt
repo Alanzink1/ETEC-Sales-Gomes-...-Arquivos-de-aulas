@@ -1,0 +1,6 @@
+A+B > C (FALSO)
+A - C <= B (VERDADEIRO)
+A+B-C == 2 (FALSO)
+A + B > C e !B + C < 15 (FALSO)
+! A+3 < B+C ou ! A > B (VERDADEIRO)
+!C > B e A+B < C (FALSO)

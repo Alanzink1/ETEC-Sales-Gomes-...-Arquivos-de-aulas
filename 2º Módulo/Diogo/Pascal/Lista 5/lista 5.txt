@@ -1,0 +1,45 @@
+exercicio 01 ______________________________________
+
+Program HelloWorld(output);
+var
+    numeroTop: integer;
+    numeroTopSoQueZera: integer;
+    
+    procedure ExibirCalculo(numero1: integer; numero2: integer);
+    begin
+        writeln(numero1 + numero2);
+    end;
+
+begin
+    writeln('Qual o primeiro número?');
+    readln(numeroTop);
+    
+    writeln('Qual o segundo número??');
+    readln(numeroTopSoQueZera);
+    
+    ExibirCalculo(numeroTop, numeroTopSoQueZera);
+end.
+
+exercicio 02 _______________________________________
+
+Program HelloWorld(output);
+    
+    procedure ParOuImpar(numero: integer);
+    begin
+        if (numero MOD 2 = 0) then
+        begin
+            writeln('O NUMERO É PAR AHFHDSAHFADSHFDAHF');
+        end
+        else
+        begin
+            writeln('o número é impar...');
+        end;
+    end;
+
+begin
+    ParOuImpar(5);
+end.
+
+exercicio 03 _______________________________________
+
+

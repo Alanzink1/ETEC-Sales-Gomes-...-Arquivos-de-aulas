@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2o Grau</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    var n1 = parseFloat(prompt('Insira o 1º número:'));
+    var n2 = parseFloat(prompt('Insira o 2º número:'));
+    var n3 = parseFloat(prompt('Insira o 3º número:'));
+    var bigger = '... Não tem kkkk';
+
+    if(n1 != n2 && n2 != n3) {
+        if(n1 > n2 && n1 > n3) {
+            bigger = n1;
+        } else if(n2 > n3) {
+            bigger = n2;
+        } else {
+            bigger = n3;
+        }
+    } else {
+        bigger = '... Não tem, são todos iguais kkkk';
+    }
+
+    alert('O maior número entre os três é o número ' + bigger)
+
+</script>
+</html>
+
+<!-- Faça um programa que receba
+    três números e mostre o maior. -->

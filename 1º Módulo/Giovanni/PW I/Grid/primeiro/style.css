@@ -1,0 +1,30 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 850px;
+    height: 750px;
+    display: grid;
+    grid-template-areas: 'vermelho vermelho vermelho vermelho'
+                        '. azul azul .'
+                        'verde verde verde verde';
+    gap: 10px;
+}
+
+.vermelho {
+    grid-area: vermelho;
+    background-color: red;
+}
+
+.azul {
+    grid-area: azul;
+    background-color: blue;
+}
+
+.verde {
+    grid-area: verde;
+    background-color: green;
+}

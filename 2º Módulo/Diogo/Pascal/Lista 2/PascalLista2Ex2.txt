@@ -1,0 +1,30 @@
+Program HelloWorld(output);
+var
+    a: integer;
+    b: integer;
+    c: integer;
+
+begin
+    a := 10;
+    b := 5;
+    c := 2;
+    
+    writeln(b, ' é igual a ', a, ': ', b = a);
+    
+    writeln(a, ' é diferente de ', b, ': ', a <> b);
+    
+    writeln(b, ' é diferente de ', a, ': ', b <> a);
+    
+    writeln('No sentido inverso ', a, ' é diferente de ', b, ': ', not (a <> b));
+    
+    writeln(a, ' é menor ou igual a ', b, ' somado com ', c, ': ', a <= b + c);
+    
+    writeln(a, ' é maior ou igual a ', b, ' somado com ', c, ': ', a >= b + c);
+    
+    writeln(b, ' é igual a ', c, ' e ', a, ' é igual a ', b, ' OU ', a, ' é igual a ', b, ' e ', b, ' é diferente de ', c);
+    
+    writeln(' OU ', a, ' é igual a ', c, ' e ', b, ' é diferente de ', c, ': ', ((b = c) and (a = b)) or ((a = b) and (b <> c)) or ((a = c) and (b <> c)));
+    
+    writeln('O resto de ', a, ' e ', b, ' é 0, e o resto de ', c, ' com ', b, ' é 1: ', (a mod b = 0) and (c mod b = 1));
+    
+end.

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* O espaço interno não vai afetar o tamanho do item */
+            box-sizing: border-box;
+        }
+
+        /* Container */
+        .exemplo1 {
+            /* Largura */
+            width: 100%;
+            /* Altura */
+            height: 120px;
+            background-color: red;
+            /* Criar barra de rolagem */
+            /* overflow: scroll; */
+            /* overflow: hidden; */
+            display: flex;
+            /* Horizontal */
+            justify-content: space-between;
+            /* Vertical */
+            align-items: center;
+            /* Espaço interno no elemento */
+            padding: 50px;
+            box-shadow: 0px 5px 5px #123;
+        }
+
+        .exemplo1 img {
+            width: 120px;
+        }
+
+        /* Item */
+        .exemplo1 nav {
+            width: 400px;
+            height: 80px;
+            /* background-color: blue; */
+        }
+
+        .exemplo1 nav a{
+            color: white;
+            text-decoration: none;
+            transition: 500ms;
+        }
+
+        .exemplo1 nav a:hover{
+            color: gray;
+        }
+
+        .exemplo1 nav{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 20px;
+        }
+
+        
+        h1{
+            text-align: center;
+            margin-top: 50px;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 80%;
+            justify-content: center;
+            margin: auto;
+            
+        }
+
+        main .item{
+            width: 250px;
+            height: 200px;
+            /* background: purple; */
+        }
+
+        main .item .descricao{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main .item .descricao .info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        main .item .descricao .btn{
+            /* margin-right: 10px; */
+            height: 30px;
+        }
+
+        .info .nome{
+            font-weight: bold;
+        }
+
+        .info .preco{
+            color: green;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="exemplo1">
+        <img src="https://etecsalesgomes.com.br/imagens/logobranco.png">
+        <nav>
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Cursos</a>
+            <a href="">Contato</a>
+        </nav>
+    </div>
+
+    <h1>Lista de itens</h1>
+    <main>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://placehold.co/250x130" alt="">
+            <div class="descricao">
+                <div class="info">
+                    <span class="nome">Nome do produto</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <button class="btn">
+                    Comprar
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+</html>

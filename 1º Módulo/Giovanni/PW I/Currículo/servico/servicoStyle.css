@@ -1,0 +1,69 @@
+* {
+    text-align: center;
+}
+
+#name-page {
+
+    text-align: center;
+    color: #882121;
+
+}
+
+h1, h2 {
+    font-family: 'Lexend', sans-serif;
+}
+
+h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+ul, li {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro img {
+    border-radius: 50%;
+}
+
+#github {
+    width: 80px;
+}
+
+#github:hover{
+    filter: invert(50%);
+}
+
+.languages-icons img:hover, .aboutme-icons img:hover {
+    filter: invert(30%);
+}
+
+.body {
+    text-align: center;
+}
+
+.body a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.body a:hover {
+    color: #16a535;
+}
+
+#formacao, #projects, #languages {
+    text-align: center;
+}
