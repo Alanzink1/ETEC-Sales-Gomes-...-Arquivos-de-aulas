@@ -13,6 +13,17 @@ Eu sou uma pessoa desenvolvedora que esta sempre buscando aprender mais e evolui
 Em minha experiência no curso, pude aprender mais sobre trabalho em equipe, colaborar com colegas de turma e ser sociável... Aprendi a escutar mais e a conseguir ajudar sem parecer que estava recitando um enigma...
 Muitas Soft Skills foram aperfeiçoadas neste curso, mas ainda mais Hard Skills vieram a tona, como:
 
+## 😎 Soft Skills
+
+- Melhora da Comunicação em Equipe;
+
+- Evolução na Liderança;
+
+- Evolução em Networking;
+
+- Evolução em Calma e Paciência;
+
+- Evolução em Pensamentos Rápidos em Momentos Críticos.
 
 ## 💀 Hard Skills
 
@@ -30,17 +41,6 @@ Muitas Soft Skills foram aperfeiçoadas neste curso, mas ainda mais Hard Skills 
 
 - Linguagem SQL;
 
-## 😎 Soft Skills
-
-- Melhora da Comunicação em Equipe;
-
-- Evolução na Liderança;
-
-- Evolução em Networking;
-
-- Evolução em Calma e Paciência;
-
-- Evolução em Pensamentos Rápidos em Momentos Críticos.
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/alanzink1/)
