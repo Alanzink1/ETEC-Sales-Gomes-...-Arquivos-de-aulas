@@ -13,7 +13,7 @@ Eu sou uma pessoa desenvolvedora que esta sempre buscando aprender mais e evolui
 Em minha experiência no curso, pude aprender mais sobre trabalho em equipe, colaborar com colegas de turma e ser sociável... Aprendi a escutar mais e a conseguir ajudar sem parecer que estava recitando um enigma...
 Muitas Soft Skills foram aperfeiçoadas neste curso, mas ainda mais Hard Skills vieram a tona, como:
 
-## 😎 Soft Skills
+## 😎 Soft Skill
 
 - Melhora da Comunicação em Equipe;
 
@@ -25,7 +25,7 @@ Muitas Soft Skills foram aperfeiçoadas neste curso, mas ainda mais Hard Skills 
 
 - Evolução em Pensamentos Rápidos em Momentos Críticos.
 
-## 💀 Hard Skills
+## 💀 Hard Skill
 
 - Melhora da Lógica de Programação;
 
